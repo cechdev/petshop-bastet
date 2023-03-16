@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleformularios.css">
+    <link rel="shortcut icon" href="imagens/icons8-bastet-32.png" type="image/x-icon">
+    <title>BASTET</title>
+</head>
+
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Últimos detalhes</b></legend>
+                <br>
+                <div class="Oquefazer">
+                    <p> O que você deseja?</p>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1">Banho & Tosa</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">Cat Sitter</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3">Hospegadem</label> <br>
+                    <input type="checkbox" id="vehicle4" name="vehicle3" value="Boat">
+                    <label for="vehicle4">Consulta Veterinaria</label>
+                </div>
+                <br>
+                <div class="quando">
+                    <p> Quando?</p>
+                    <input id="date" type="date">
+                </div>
+                <br>
+                <div class="horario">
+                    <p>Escolha o melhor horário para vocês:</p>
+                    <input type="time" id="appt" name="appt" min="00:00" max="24:00" required>
+                    <small>Funcionamos 24 horas </small>
+                </div>
+                <br>
+                <div class="Obs">
+                    <p>Observações:</p>
+                    <textarea></textarea>
+                </div>
+                <br>
+                <div class="aceite">
+                    <input type="checkbox" class="aceitar" required>
+                    <p> Concordo com os termos</p>
+                </div>
+                <br>
+                <input type="submit" class="btn2" value="Enviar" />
+
+            </fieldset>
+        </form>
+    </div>
+</body>

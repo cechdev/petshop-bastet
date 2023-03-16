@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: large;
+}
+
+body {
+    background-color: white;
+}
+
+
+.hero {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 0;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: purple;
+    transition: .3s;
+}
+
+.container-busca .input {
+    border: 0;
+    outline: none;
+}
+
+.search_wrap {
+    width: 200px;
+    margin: 38px auto;
+}
+
+.search_wrap .search_box {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    background-color: purple;
+
+}
+
+.search_wrap .search_box .input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.search_wrap .search_box .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background: purple;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover {
+    background: rgb(201, 132, 201);
+}
+
+.search_wrap .search_box .btn.btn_common .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+}
+
+.search_wrap.search_wrap_1 .search_box .btn {
+    right: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.load {
+    animation: slide 2s;
+}
+
+.slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(imagens/teste.jpg);
+    }
+
+    20% {
+        background-image: url(imagens/teste2.jpg);
+    }
+
+    20.01% {
+        background-image: url(imagens/teste3.jpg);
+    }
+
+    40% {
+        background-image: url(imagens/teste3.jpg);
+    }
+
+    40.01% {
+        background-image: url(imagens/teste3.jpg);
+    }
+
+    60% {
+        background-image: url(imagens/teste4.jpg);
+    }
+
+    60.01% {
+        background-image: url(imagens/teste4.jpg);
+    }
+
+    80% {
+        background-image: url(imagens/teste5.jpg);
+    }
+
+    80.01% {
+        background-image: url(imagens/teste5.jpg);
+    }
+
+    100% {
+        background-image: url(imagens/teste6.jpg);
+    }
+}
+
+.sobre img {
+    width: 95%;
+    padding-left: 15%;
+}
+
+
+.circle-image {
+    display: inline-block;
+    border-radius: 75%;
+    overflow: hidden;
+    width: 180px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle-image p {
+    font-size: 18px;
+}
+
+.equipe {
+    width: 80%;
+    margin-top: 70px;
+    margin-left: auto;
+
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.gatos {
+    text-align: center;
+}
+
+.gatos p {
+    margin-left: 80px;
+}
+
+
+footer {
+    margin-top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.511);
+
+}
+
+
+div.social-media-links {
+    overflow: hidden;
+    padding-bottom: 4px;
+    text-align: center;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+    height: 80px;
+}
+
+.footerli {
+    display: inline;
+    margin: 0;
+    padding: 15px;
+}
+
+.footera {
+    border-bottom: 0px solid rgba(0, 0, 0, 0.95);
+    border-radius: 4px;
+    box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0), 0 6px 8px rgba(0, 0, 0, 0), 0 24px 24px rgba(0, 0, 0, 0), 0 36px 36px rgba(0, 0, 0, 0), 0 64px 64px rgba(0, 0, 0, 0), 0 64px 128px rgba(0, 0, 0, 0), 0 120px 0 rgba(0, 0, 0, 0), 0 86px 8px 6px rgba(0, 0, 0, 0), ;
+    display: inline-block;
+    height: 30px;
+    padding: 20px;
+    position: relative;
+    transition: .2s ease-in;
+    width: 30px;
+}
+
+.footera:hover {
+    transform: translateY(-4px);
+}
